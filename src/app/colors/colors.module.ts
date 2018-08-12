@@ -6,18 +6,22 @@ import { RedComponent } from './red/red.component';
 import { BlueComponent } from './blue/blue.component';
 import { ColorListComponent } from './color-list/color-list.component';
 import { ColorsService } from './colors.service';
+import { ColorsRoutingModule } from './colors-routing.module';
+import { ColorDetailComponent } from './color-detail/color-detail.component';
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ColorsRoutingModule
   ],
   declarations: [
     YellowComponent,
     GreenComponent,
     RedComponent,
     BlueComponent,
-    ColorListComponent
+    ColorListComponent,
+    ColorDetailComponent
   ],
   providers: [ColorsService],
 })

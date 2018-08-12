@@ -13,8 +13,8 @@ import { ColorsModule } from './colors/colors.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ColorsModule
+    ColorsModule,
+    AppRoutingModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

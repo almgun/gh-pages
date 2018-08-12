@@ -2,5 +2,11 @@
   color-list works!
 </p>
 <ul>
-  <li *ngFor="let color of colorList | async">{{color}}</li>
+
+  <li *ngFor="let color of colorList | async">
+    <a [routerLink]="['/color-detail', color]">
+      {{ color }}
+    </a>
+
+  </li>
 </ul>
