@@ -5,6 +5,7 @@ import { BlueComponent } from './blue/blue.component';
 import { GreenComponent } from './green/green.component';
 import { ColorListComponent } from './color-list/color-list.component';
 import { ColorDetailComponent } from './color-detail/color-detail.component';
+import { ColorDetailHomeComponent } from './color-detail/color-detail-home.component';
 
 const routes: Routes = [
 
@@ -14,6 +15,10 @@ const routes: Routes = [
     children: [{
       path: ':id',
       component: ColorDetailComponent
+    },
+    {
+      path: '',
+      component: ColorDetailHomeComponent
     }
 
     ]

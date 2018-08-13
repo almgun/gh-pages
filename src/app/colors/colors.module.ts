@@ -8,6 +8,7 @@ import { ColorListComponent } from './color-list/color-list.component';
 import { ColorsService } from './colors.service';
 import { ColorsRoutingModule } from './colors-routing.module';
 import { ColorDetailComponent } from './color-detail/color-detail.component';
+import { ColorDetailHomeComponent } from './color-detail/color-detail-home.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ColorDetailComponent } from './color-detail/color-detail.component';
     RedComponent,
     BlueComponent,
     ColorListComponent,
-    ColorDetailComponent
+    ColorDetailComponent,
+    ColorDetailHomeComponent
   ],
   providers: [ColorsService],
 })
