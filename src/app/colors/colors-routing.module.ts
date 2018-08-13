@@ -10,14 +10,15 @@ const routes: Routes = [
 
   {
     path: 'color-list',
-    component: ColorListComponent
-  },
-  {
-    path: 'color-detail/:id',
-    component: ColorDetailComponent
+    component: ColorListComponent,
+    children: [{
+      path: ':id',
+      component: ColorDetailComponent
+    }
+
+    ]
   }
-
-
+ 
 ];
 
 @NgModule({
