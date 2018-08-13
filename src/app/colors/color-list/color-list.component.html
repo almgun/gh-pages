@@ -4,9 +4,11 @@
 <ul>
 
   <li *ngFor="let color of colorList | async">
-    <a [routerLink]="['/color-detail', color]">
+    <a [routerLink]="[color]">
       {{ color }}
     </a>
 
   </li>
 </ul>
+<p>color router outlet below</p>
+<router-outlet></router-outlet>
