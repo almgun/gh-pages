@@ -1,2 +1,7 @@
-
-<p> current color {{color$ | async}}</p>
+<div [ngClass]="{
+  spice:true,
+  sugar:sugar
+}">
+  This component gets it's input from the router
+</div>
+<p> current color received from router {{color$ | async }}</p>

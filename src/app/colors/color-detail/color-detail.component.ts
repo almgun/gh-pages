@@ -3,8 +3,7 @@ import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { switchMap,map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
-@Component({
-  selector: 'app-color-detail',
+@Component({  
   templateUrl: './color-detail.component.html',
   styleUrls: ['./color-detail.component.css']
 })
@@ -13,6 +12,7 @@ export class ColorDetailComponent implements OnInit {
 
   color$: Observable<string>;
   color: string;
+  sugar:boolean = true;
   constructor(private route: ActivatedRoute,
     private router: Router,
   ) { }

@@ -1,10 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>{{title}}</h1>
-<nav>
-  <a routerLink="/color-list">Color List</a>
-  <a routerLink="/red">Red</a>
-  <a routerLink="/blue">Blue</a>
-  <a routerLink="/green">Green</a>
-</nav>
 
-<router-outlet></router-outlet>
+
+
+<div class="row">
+  <div class="col">
+    <nav>
+      <a routerLink="/color-list">Color List</a>
+      <a routerLink="/red">Red</a>
+      <a routerLink="/blue">Blue</a>
+      <a routerLink="/green">Green</a>
+    </nav>
+
+    <router-outlet></router-outlet>
+  </div>
+  <div class="col"><app-red></app-red></div>
+  <div class="col"><app-green></app-green></div>
+  <div class="col"><app-blue></app-blue></div>
+</div>

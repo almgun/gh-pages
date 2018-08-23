@@ -26,5 +26,10 @@ import { ColorDetailHomeComponent } from './color-detail/color-detail-home.compo
     ColorDetailHomeComponent
   ],
   providers: [ColorsService],
+  exports:[
+    RedComponent,
+    BlueComponent,
+    GreenComponent
+  ]
 })
 export class ColorsModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../../message.service';
 
 @Component({
   selector: 'app-green',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private msg:MessageService) { }
+  public value:string;
 
   ngOnInit() {
+    this.msg.msgEmitter.subscribe(val => {
+      this.value = val;
+    })
   }
 
 }

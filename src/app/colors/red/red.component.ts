@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { MessageService } from '../../message.service';
 
 @Component({
   selector: 'app-red',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private msg:MessageService) { }
 
   ngOnInit() {
+  }
+
+  @Output()
+  onClick(message: string){
+    console.log('clicked');
+    this.msg.emit("sent " + new Date());
   }
 
 }
